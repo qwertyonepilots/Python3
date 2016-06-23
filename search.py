@@ -1,6 +1,6 @@
 
 import webbrowser
-engines = {"google": "www.google.com/search?q=", "bing": "http://www.bing.com/search?q=", "duckduckgo": "https://duckduckgo.com/?q="}
+engines = {"google": "www.google.co.uk/search?q=", "bing": "http://www.bing.com/search?q=", "duckduckgo": "https://duckduckgo.com/?q="}
 
 def search():
         if askEngine.lower() == "google":
@@ -14,7 +14,7 @@ def search():
                 except webbrowser.Error as e:
                         print(e)
 
-        elif askEngine.lower() == "yahoo":
+        elif askEngine.lower() == "duckduckgo":
                 try:
                         webbrowser.open_new(engines["duckduckgo"] + ask)
                 except webbrowser.Error as e:
