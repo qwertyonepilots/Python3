@@ -1,6 +1,6 @@
 
 import webbrowser
-engines = {"google": "www.google.com/searchq=", "bing": "http://www.bing.com/search?q=", "duckduckgo": "https://duckduckgo.com/?q="}
+engines = {"google": "www.google.com/search?q=", "bing": "http://www.bing.com/search?q=", "duckduckgo": "https://duckduckgo.com/?q="}
 
 def search():
         if askEngine.lower() == "google":
